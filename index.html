@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Aureliana Rodrigues — estudante de Análise e Desenvolvimento de Sistemas.">
+  <title>Aureliana Rodrigues | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="#inicio">AR<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">PORTFÓLIO • TECNOLOGIA • DESENVOLVIMENTO</p>
+          <h1>Olá, eu sou <span>Aureliana</span>.</h1>
+          <p class="hero-text">
+            Estudante de Análise e Desenvolvimento de Sistemas, apaixonada por tecnologia
+            e em constante evolução para transformar ideias em soluções digitais.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn secondary" href="#contato">Entrar em contato</a>
+          </div>
+
+          <div class="quick-info">
+            <div><strong>ADS</strong><span>Formação em tecnologia</span></div>
+            <div><strong>Python</strong><span>Em aprendizado</span></div>
+            <div><strong>Web</strong><span>HTML • CSS • JS</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="code-window">
+            <div class="window-top"><span></span><span></span><span></span></div>
+            <pre><code>const estudante = {
+  nome: "Aureliana",
+  area: "Tecnologia",
+  foco: "Desenvolvimento",
+  curiosidade: true,
+  aprendendo: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python"
+  ]
+};
+
+console.log("Vamos criar!");</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SOBRE MIM</p>
+          <h2>Aprender, testar e evoluir.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+               Sou estudante de Análise e Desenvolvimento de Sistemas e estou construindo
+  minha formação na área de tecnologia por meio de estudos, projetos acadêmicos
+  e prática constante.
+            </p>
+            <p>
+              Tenho interesse em desenvolvimento de software, programação, experiência do
+  usuário e criação de soluções digitais. Atualmente estudo tecnologias como
+  HTML, CSS, JavaScript e Python.
+              
+            </p>
+            <p>
+               Meu objetivo profissional é evoluir tecnicamente, ampliar meu portfólio e
+  conquistar oportunidades que me permitam crescer na área de tecnologia.
+              
+            </p>
+          </div>
+
+          <div class="skills reveal">
+            <h3>Conhecimentos e estudos</h3>
+            <div class="skill-list">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>Python</span><span>Git</span><span>GitHub</span>
+              <span>Figma</span><span>UX/UI</span>
+              <span>Redes</span><span>Banco de dados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">PROJETOS</p>
+          <h2>Projetos que representam meu aprendizado.</h2>
+          <p>Alguns trabalhos e estudos que fazem parte da minha evolução acadêmica e profissional.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-number">01</div>
+            <div class="project-icon">⌨</div>
+            <h3>Desafios de Lógica com Python</h3>
+            <p>
+                Projeto de estudos desenvolvido para praticar lógica de programação
+  utilizando exercícios com condições, estruturas de repetição e funções em Python.
+              
+            </p>
+            <div class="tags"><span>Python</span><span>Lógica</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-icon">◈</div>
+            <h3>Projeto de Redes</h3>
+            <p>
+              Prática de conceitos de redes e endereçamento utilizando simuladores,
+              com foco na compreensão da comunicação entre dispositivos.
+            </p>
+            <div class="tags"><span>Redes</span><span>Packet Tracer</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-icon">✦</div>
+            <h3>UX e Prototipação</h3>
+            <p>
+              Criação e organização de uma interface pensando em experiência do usuário,
+              hierarquia visual, navegação e prototipação.
+            </p>
+            <div class="tags"><span>Figma</span><span>UX/UI</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container contact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CONTATO</p>
+          <h2>Vamos conversar sobre tecnologia?</h2>
+          <p>
+            <p>
+  Conheça meus projetos e acompanhe minha evolução na área de tecnologia
+  através do meu perfil profissional no GitHub.
+</p>
+          
+          </p>
+
+          <div class="contact-links">
+            <!-- SUBSTITUA OS LINKS ABAIXO PELOS SEUS -->
+            <a href="https://github.com/aurelianalirodrigues-bip" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            
+          
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <label for="name">Nome</label>
+          <input id="name" type="text" placeholder="Seu nome" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seuemail@exemplo.com" required>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" rows="5" placeholder="Escreva uma mensagem..." required></textarea>
+
+          <button class="btn primary" type="submit">Enviar mensagem</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="top-btn" id="topBtn" aria-label="Voltar ao topo">↑</button>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aureliana Rodrigues • Portfólio desenvolvido com HTML, CSS, JavaScript e apoio de IA.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
