@@ -1,0 +1,53 @@
+name: Pipeline CI-CD Python
+
+on:
+  push:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    name: Continuous Integration
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v7
+
+      - name: Configurar Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Atualizar pip
+        run: python -m pip install --upgrade pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Executar testes
+        run: pytest -v
+
+  delivery:
+    name: Continuous Delivery
+    needs: ci
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v7
+
+      - name: Criar pacote para entrega
+        run: |
+          mkdir -p dist
+          cp calculadora.py dist/
+          echo "Commit: $GITHUB_SHA" > dist/build-info.txt
+
+      - name: Publicar artefato
+        uses: actions/upload-artifact@v7
+        with:
+          name: calculadora-python
+          path: dist/
